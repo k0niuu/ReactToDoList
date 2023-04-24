@@ -1,0 +1,197 @@
+* {
+	font-family: Arial, Helvetica, sans-serif;
+	box-sizing: border-box;
+}
+
+body {
+	background: linear-gradient(
+		90deg,
+		hsla(200, 100%, 25%) 0%,
+		hsla(200, 100%, 30%, 0.6) 100%
+	);
+	color: hsl(200, 100%, 90%);
+	max-width: 400px;
+	padding: 1rem;
+	margin: 0 auto;
+}
+
+#title-label {
+	padding: 20px;
+	text-align: center;
+}
+
+#root {
+	min-height: 500px;
+	width: 500px;
+	background-color: #161a2b;
+	border-radius: 0.5em;
+	padding-bottom: 20px;
+}
+
+.new-item-form {
+	display: flex;
+	flex-direction: column;
+	gap: 0.5rem;
+}
+
+.form-row {
+	display: flex;
+	gap: 0.1rem;
+}
+
+.btn {
+	width: 60px;
+	background: hsl(200, 100%, 50%, 0.1);
+	border: 1px solid hsl(200, 100%, 50%);
+	color: hsl(200, 100%, 50%);
+	padding: 0.25em 0.5em;
+	border-radius: 0.25em;
+	cursor: pointer;
+	outline: none;
+}
+
+.btn:hover,
+.btn:focus-visible {
+	background: hsl(200, 100%, 50%, 0.2);
+}
+
+.btn.btn-danger {
+	height: 28px;
+	width: 70px;
+	background: hsla(0, 0%, 100%, 0.2);
+	border: 1px solid hsl(0, 0%, 100%);
+	color: hsl(0, 0%, 100%);
+	float: right;
+	margin-right: 10px;
+	font-size: 1rem;
+}
+
+.btn.btn-danger:hover,
+.btn.btn-danger:focus-visible {
+	background: #161a2b56;
+}
+
+.new-item-form input {
+	margin-left: 20px;
+	width: 400px;
+	height: 40px;
+	outline: none;
+	border: 1px solid hsl(200, 100%, 40%);
+	background: hsl(200, 100%, 30%);
+	border-radius: 0.25em;
+	padding: 0.25em 0.5em;
+	color: hsl(200, 100%, 90%);
+}
+
+.new-item-form input:focus {
+	border: 1px solid hsl(200, 100%, 70%);
+}
+
+.header {
+	font-size: 1.5rem;
+	margin-top: 1.5rem;
+	margin-bottom: 0.5rem;
+	text-align: center;
+}
+
+.list {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	align-items: center;
+}
+
+.list li:has(input:checked) label {
+	color: hsl(200, 20%, 40%);
+}
+
+.list {
+	display: flex;
+	flex-direction: column;
+	gap: 0.4rem;
+}
+
+.list li {
+	width: 460px;
+	min-height: 40px;
+	display: flex;
+	gap: 0.5rem;
+	align-items: center;
+	background: linear-gradient(
+		270deg,
+		rgb(253, 132, 46) 0%,
+		rgba(255, 84, 17, 0.7) 100%
+	);
+	border-radius: 0.25em;
+	justify-content: space-between;
+	display: flex;
+}
+
+.list li:nth-child(3n + 1) {
+	background: linear-gradient(
+		90deg,
+		rgba(93, 12, 255, 0.7) 0%,
+		rgba(155, 0, 250, 1) 100%
+	);
+}
+
+.list li:nth-child(3n + 2) {
+	background: linear-gradient(
+		270deg,
+		rgba(255, 12, 241, 1) 0%,
+		rgba(250, 0, 135, 0.7) 100%
+	);
+}
+
+.list li:has(input:checked) {
+	opacity: 0.4;
+}
+
+.list li label {
+	display: flex;
+	margin-left: 10px;
+	gap: 0.25rem;
+	cursor: pointer;
+	align-items: center;
+}
+
+.list li:has(input:focus-visible) label {
+	outline: 1px solid hsl(200, 100%, 50%);
+}
+
+.list li input {
+	outline: none;
+	width: 0;
+	height: 0;
+	appearance: none;
+	pointer-events: none;
+	position: absolute;
+}
+
+.list li label::before {
+	content: "";
+	display: block;
+	width: 0.9rem;
+	height: 0.9rem;
+	background: hsl(200, 100%, 90%);
+	border-radius: 0.25em;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.list li label:hover::before {
+	background: hsl(200, 100%, 80%);
+}
+
+.list li:has(input:checked) label::before {
+	content: "✔";
+	background: #161a2b;
+	color: hsl(200, 100%, 90%);
+	font-size: 0.75rem;
+	font-weight: bold;
+}
+
+.list li:has(input:checked) label:hover::before {
+	background: hsl(200, 100%, 30%);
+}
