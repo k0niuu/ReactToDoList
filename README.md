@@ -23,3 +23,10 @@ npm run dev
 ```
 
 and click the localhost link displayed in the terminal.
+
+## Tech Stack
+
+* React.js
+* CSS
+* HTML
+* App project created by Vite
