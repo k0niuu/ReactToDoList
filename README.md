@@ -30,4 +30,4 @@ and click the localhost link displayed in the terminal.
 * JavaScript
 * CSS
 * HTML
-* App project created by Vite
+* Vite
