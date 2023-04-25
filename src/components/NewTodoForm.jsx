@@ -15,7 +15,7 @@ export function NewTodoForm({ onSubmit }) {
 	return (
 		<form onSubmit={handlerSubmit} className="new-item-form">
 			<label id="title-label" htmlFor="item">
-				What's the Plan for Today?
+				What you need to do Today?
 			</label>
 			<div className="form-row">
 				<input
