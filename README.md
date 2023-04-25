@@ -27,6 +27,7 @@ and click the localhost link displayed in the terminal.
 ## Tech Stack
 
 * React.js
+* JavaScript
 * CSS
 * HTML
 * App project created by Vite
