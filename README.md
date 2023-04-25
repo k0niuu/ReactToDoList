@@ -2,7 +2,7 @@
 
 This is a very basic "TodoList" application, thanks to which you can add tasks that you have to do, mark them done, and delete them.
 
-![](assets/TodoList.png
+![](assets/ToDoList.png)
 
 ## How to use it?
 
